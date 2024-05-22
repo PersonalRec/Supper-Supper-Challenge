@@ -1,0 +1,7 @@
+# Ignore the Catboost info folder
+crop_yield_challenge/catboost_info
+
+# Ignore the lidar points files
+lidar_challenge/ground_points.las
+lidar_challenge/non_ground_points.las
+lidar_challenge/input.las

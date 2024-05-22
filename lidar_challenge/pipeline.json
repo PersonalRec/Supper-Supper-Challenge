@@ -1,0 +1,23 @@
+{
+  "pipeline": [
+    {
+      "type": "readers.las",
+      "filename": "./input.las"
+    },
+    {
+      "type": "filters.smrf",
+      "scalar": 1.25,
+      "slope": 0.15,
+      "threshold": 0.5,
+      "window": 16.0
+    },
+    {
+      "type": "filters.range",
+      "limits": "Classification[2:2]" 
+    },
+    {
+      "type": "writers.las",
+      "filename": "ground_points.las"
+    }
+  ]
+}
